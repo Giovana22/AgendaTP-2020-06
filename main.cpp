@@ -247,7 +247,7 @@ void editarCompromisso() {
 		std::cout << "Descreva o compromisso:";
 		std::cin >> descricao;
 
-		std::string sql = "insert into Compromisso (data, descricao)values('" + ano + "-" + mes + "-" + dia + "','" + descricao + "')";
+		std::string sql = "upgrade Compromisso (data, descricao)values('" + ano + "-" + mes + "-" + dia + "','" + descricao + "')";
 
 					int statusDeExecucao = mysql_query(connexao, sql.data());
 
